@@ -6,7 +6,7 @@ import { LinkIcon, PlusIcon, QuestionMarkCircleIcon } from '@heroicons/react/20/
 const team = [
   {
     name: 'Tom Cook',
-    email: 'tom.cook@example.com',
+    email: 'tim.cook@example.com',
     href: '#',
     imageUrl:
       'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
@@ -63,6 +63,7 @@ export default function SlideOver(props) {
                 <Dialog.Panel className="pointer-events-auto w-screen max-w-2xl">
                   <form className="flex h-full flex-col overflow-y-scroll bg-white shadow-xl">
                     <div className="flex-1">
+
                       {/* Header */}
                       <div className="bg-gray-50 px-4 py-6 sm:px-6">
                         <div className="flex items-start justify-between space-x-3">
@@ -265,13 +266,14 @@ export default function SlideOver(props) {
                         <button
                           type="button"
                           className="rounded-md border border-gray-300 bg-white py-2 px-4 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-                          onClick={() => set.setOpen(false)}
+                          onClick={() => props.setOpen(false)}
                         >
                           Cancel
                         </button>
                         <button
-                          type="submit"
+                          type="button"
                           className="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                          onClick={() => props.setOpen(false)}
                         >
                           Create
                         </button>

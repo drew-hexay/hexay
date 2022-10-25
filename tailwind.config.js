@@ -7,5 +7,5 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require('/Users/drewleonard/my-project/node_modules/@tailwindcss/forms')],
 }
