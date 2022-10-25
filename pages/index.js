@@ -19,7 +19,7 @@ import {
   ReceiptPercentIcon,
   RectangleStackIcon,
 } from "@heroicons/react/24/outline";
-import SlideOver from './SlideOver';
+import SlideOver from '../components/SlideOver';
 
 const navigation = [
   { name: "Home", href: "#", icon: HomeIcon, current: true },
